@@ -1,0 +1,27 @@
+@keyframes flashBackground {
+    0%, 100% { background-color: #dc2626; } /* Dark red */
+    50% { background-color: white; } /* Lighter red */
+  }
+  
+  @keyframes flashButton {
+    0%, 100% { color: #dc2626; background-color: #ffffff; } /* Red text, white background */
+    50% { color: #ffffff; background-color: #dc2626; } /* White text, red background */
+  }
+
+  @keyframes flashTitle {
+    0%, 100% { color: white } /* Red text, white background */
+    50% { color: #dc2626 } /* White text, red background */ 
+  }
+
+  .flashing-bg {
+    animation: flashBackground 1s linear infinite;
+  }
+  
+  .flash-button {
+    animation: flashButton 1s linear infinite;
+  }
+
+  .flash-title {
+    animation: flashTitle 1s linear infinite;
+  }
+  

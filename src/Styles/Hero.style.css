@@ -1,0 +1,63 @@
+/* Animation for the "Hey There!" text */
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animation for the "SafeGuard Here 👋" text */
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Apply animations to specific elements */
+  .hey-there {
+    animation: slideInLeft 0.5s ease forwards;
+  }
+  
+  .safeguard {
+    animation: slideInRight 0.5s ease forwards;
+  }
+
+  /* Animation for the "SafeGuard Here 👋" text */
+@keyframes wave {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-5px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply animations to specific elements */
+  .safeguard {
+    display: inline-block;
+    font-size: 32px;
+  }
+  
+  .safeguard span {
+    display: inline-block;
+    animation: wave 1s infinite;
+  }
+  
